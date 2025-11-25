@@ -1,5 +1,6 @@
 import React from "react";
 import Input from "../Forms/Input";
+import Head from "../Helper/Head";
 import Button from "../Forms/Button";
 import Error from "../Helper/Error";
 import useForm from "../../Hooks/useForm";
@@ -24,6 +25,7 @@ const LoginPasswordLost = () => {
 
   return (
     <section>
+      <Head title="Perdeu sua senha" />
       <h1 className="title">Perdeu sua senha ?</h1>
       {data ? (
         <p style={{ color: "#4c1" }}>{data}</p>

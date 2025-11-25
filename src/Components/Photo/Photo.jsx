@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "../Helper/Head";
 import { useParams } from "react-router-dom";
 import useFetch from "../../Hooks/useFetch";
 import { PHOTO_GET } from "../../api";
@@ -20,6 +21,7 @@ const Photo = () => {
   if (data)
     return (
       <section className="container mainContainer">
+        <Head title={data.photo.title} />
         <PhotoContent single={true} data={data} />
       </section>
     );
