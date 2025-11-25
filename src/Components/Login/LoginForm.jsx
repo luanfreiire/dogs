@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "../Helper/Head";
 import { Link } from "react-router-dom";
 import Input from "../Forms/Input";
 import Button from "../Forms/Button";
@@ -24,6 +25,7 @@ const LoginForm = () => {
 
   return (
     <section className="animeLeft">
+      <Head title="Login" />
       <h1 className="title">Login</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" {...username} />
